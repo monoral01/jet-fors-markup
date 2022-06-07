@@ -1,0 +1,138 @@
+html {
+    font-family: 'Lato', sans-serif;
+    background: url('./assets/background.svg') no-repeat, url('./assets/gradient.svg') no-repeat;
+    color: #FFFFFF;
+    line-height: 0.5;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+svg {
+    width: 100%;
+    height: 100%;
+}
+#main {
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(1,29,66, 0) 100%);
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navBar {
+    height: 100%;
+    display: flex;
+    text-transform: uppercase;
+}
+.navBar > a {
+    margin-left: 50px;
+    margin-right: 50px;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+.navBar > a:hover {
+    color: #FF1744;
+}
+
+.telBlock {
+    margin-right: 100px;
+}
+.link {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+    /* margin-left: 10px; */
+    text-decoration: none;
+    color: #FFFFFF;
+    transition: color 0.3s;
+}
+.link:hover {
+    color: #FF1744;
+}
+.upperLogo {
+    width: fit-content;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+.upperLogo > p {
+    margin: 16px;
+}
+.bottomLogo {
+    width: fit-content;
+    margin-left: 100px;
+}
+.bottomLogo:nth-last-child() {
+    margin-bottom: 0;
+}
+.bottomLogo > p {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.description {
+    margin-top: 160px;
+    text-align: center;
+}
+.description-header {
+    font-size: 48px;
+    text-transform: uppercase;
+}
+.description-body {
+    font-size: 24px;
+    margin-top: 20px;
+}
+.btn-group > button {
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 19px;
+    font-weight: 600;
+    width: 260px;
+    height: 60px;
+    background-color: inherit;
+}
+.btn-group-project {
+    box-shadow: 0px 0px 20px #FF1744;
+    background-color: #FF1744 !important;
+    border: none;
+}
+.btn-group-team {
+    border: 1px solid #FFFFFF;
+}
+.definition {
+    margin-top: 430px;
+    text-align: center;
+    align-items: center;
+    font-size: 46px;
+    font-weight: 500;
+}
+.definition > img {
+    height: 523px;
+}
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.contacts {
+    /* margin-left: 50px; */
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.adresses {
+    text-align: right;
+    line-height: 30px;
+    /* font-weight: 300; */
+    font-size: 18px;
+}
