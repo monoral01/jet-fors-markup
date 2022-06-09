@@ -1,2 +1,3 @@
-// const d = new Date();
-// alert("Today's date is " + d);
+export const handleExpand = (event) => {
+    console.log('expand');
+}
