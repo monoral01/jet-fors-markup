@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+ 	<head>
+		<meta charset="utf-8" />
+		<title>HTML5</title>
+		<link rel="stylesheet" href="./styles.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+  		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600;700&display=swap" rel="stylesheet">
+	</head>
+	<body>
+	<div class="mainPage">
+		<div class="companyContacts">
+			<div class="header">
+				<div class="upperLogo" style="margin-top: 10px;">
+					<a href="./index.html">
+						<p style="text-align:right; font-size: 24px; font-weight: 300; color: #FFFFFF;">JET</p>
+						<p style="font-weight: 400; font-size: 36px; color: #FF1744;">FORS</p>
+					</a>
+				</div>	
+				<div class="navBar">
+					<a href="">Вакансии</a>
+					<a href="">О нас</a>
+					<a href="">Кейсы</a>
+					<a href="">Команда</a>
+					<a href="">Клиенты</a>
+					<a href="./contacts.html">Контакты</a>
+				</div>
+				<div class="telBlock">
+					<img src="./assets/telephone.svg"><a class="link" href="tel:+375255406261" style="margin-left: 10px;">+375255406261</a>
+				</div>
+			</div>
+			<div class="mainLabel"><p>КОНТАКТЫ</p></div>
+			<div class="formAndContacts">
+				<div class="form">
+					<p class="formLabel">Напишите нам</p>
+					<form method="post">
+						<div class="formToSend">
+							<div>
+								<input type="text" placeholder="Введите имя" name="name">
+							</div>
+							<div>
+								<input type="email" placeholder="Введите Email" name="email">
+							</div>
+							<div class="contactsBtnGroup">
+								<button>Отправить резюме</button>
+								<button disabled>Предложить проект</button>
+							</div>
+							<div class="specialitySelect">
+								<select size="1" name="speciality">
+									<option selected disabled>Ваша специализация</option>
+									<option value="Чебурашка">Чебурашка</option>
+									<option value="Крокодил Гена">Крокодил Гена</option>
+									<option value="Шапокляк">Шапокляк</option>
+								</select>
+							</div>
+							<div class="fileUpload">
+								<input placeholder="Прикрепите файл" type="file" accept=".doc, .docx, .odt, .pdf">
+							</div>
+							<div>
+								<textarea rows="7" placeholder="Введите сообщение"></textarea>
+							</div>
+							<div>
+								<button type="submit" class="submitButton">Отправить</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="contactsWithMap">
+					<p class="formLabel">Офис в Минске</p>
+					<p>Адрес - г. Минск, 3-й Загородный переулок, 4В, оф 411</p>
+					<p>Номер телефона </p>
+					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab029a6ef72e47f4c996e0a5049f611cb562b0fc02289a7f5e3c8ce9dbb78ae6c&amp;width=500&amp;height=512&amp;lang=ru_RU&amp;scroll=true"></script>
+				</div>
+				<div class="contactsWithMap">
+					<p class="formLabel">Офис в Гродно</p>
+					<p>Адрес - г. Гродно, ул Буденного, 48А, оф 77</p>
+					<p>Номер телефона </p>
+					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A807557e4976119bfd899084403c317a1bf683fedc72a614b7ddb0f76a4c5d470&amp;width=500&amp;height=512&amp;lang=ru_RU&amp;scroll=true"></script>				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="contactsAndLogo">
+				<div class="bottomLogo">
+					<p style="text-align:right; font-size: 24px; font-weight: 300; color: #FFFFFF;">JET</p>
+					<p style="font-weight: 400; font-size: 36px; color: #FF1744;">FORS</p>
+				</div>
+				<div class="contacts">
+					<div>
+						<a href="mailto:postmaster@jet-fors.ru" class="link">
+							postmaster@jet-fors.ru
+						</a>
+					</div>
+					<div>
+						<a class="link" style="margin-top: 20px;" href="tel:+375255406261">+375255406261</a>
+					</div>
+				</div>
+			</div>
+				<div class="adresses">
+					<div>
+						г. Минск, 3-й Загородный переулок, 4В, оф 411 
+					</div>
+					<div>
+						г. Гродно, ул Буденного, 48А, оф 77 
+					</div>
+				</div>
+		</div>
+	</div>
+	</body>
+<script type="text/javascript" src="./main.js"></script>
+<style lang="scss">
+	.mainPage {
+		background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(1,29,66, 0) 100%);
+		flex-direction: column;
+	}
+	.mainLabel {
+        font-size: 48px;
+        font-weight: 300;
+        line-height: 62px;
+		width: 100%;
+		height: 90%;
+    }
+	.companyContacts {
+		background: url(./assets/companyContacts.svg) no-repeat;
+	}
+	.formAndContacts {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		margin-left: 60px;
+		margin-right: 30px;
+		margin-bottom: 40px;
+		font-size: 21px;
+	}
+	.formAndContacts > div {
+		width: 30%;
+	}
+	input {
+		outline: none;
+		background: initial;
+		color: white;
+		font-size: 18px !important;
+		border: none;
+		width: 350px;
+		height: 60px;
+	}
+	input [type=file] {
+		height: 30px;
+	}
+	input[type=file]::file-selector-button {
+		display: none;
+	}
+	input::placeholder {
+		color: white;
+	}
+	.formLabel {
+		font-weight: 500;
+		font-size: 32px;
+		line-height: 0.4;
+		text-align: left;
+	}
+	.formToSend {
+		width: 350px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+	.formToSend > div {
+		margin-top: 15px;
+		border: 1px solid #FFFFFF;
+	}
+	.contactsWithMap {
+		text-align: left;
+		line-height: 1.2;
+	}
+	.contactsBtnGroup {
+		width: 350px;
+		height: 40px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		border: none !important;
+	}
+	.contactsBtnGroup > button {
+		font-size: 14px;
+		width: 48%;
+	}
+	.contactsBtnGroup > button:disabled {
+		background-color: initial;
+		color: white;
+		opacity: 40%;
+		border: 1px solid white;
+	}
+	.contactsBtnGroup > button:hover {
+		outline: none;
+	}
+	.specialitySelect {
+		width: 100%;
+	}
+	.specialitySelect > select {
+		width: 100%;
+		height: 60px;
+		font-size: 18px;
+		color: #FFFFFF;
+		outline: none;
+		background: initial;
+	}
+	.submitButton {
+		text-transform: uppercase;
+		color: #FFFFFF;
+		cursor: pointer;
+		font-size: 19px;
+		font-weight: 600;
+		width: 350px;
+		height: 60px;
+		box-shadow: 0px 0px 20px #FF1744;
+		background-color: #FF1744 !important;
+		border: none;
+	}
+	.fileUpload {
+		cursor: pointer;
+		height: 40px;
+	}
+	textarea {
+		font-family: 'Lato', sans-serif;
+		color: white;
+		font-size: 18px;
+		width: 350px;
+		resize: none;
+		outline: none;
+		background: inherit;
+		border: none !important;
+	}
+	textarea::placeholder {
+		font-family: 'Lato', sans-serif;
+		color: white;
+		font-size: 18px;
+	}
+</style>
+</html>
