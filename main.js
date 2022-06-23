@@ -1,3 +1,3 @@
-export const handleExpand = (event) => {
+const handleExpand = (event) => {
     console.log('expand');
 }
